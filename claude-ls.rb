@@ -5,20 +5,20 @@
 class ClaudeLs < Formula
   desc "Terminal UI for managing Claude Code sessions"
   homepage "https://github.com/alexmt/claude-ls"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/alexmt/claude-ls/releases/download/v0.1.0/claude-ls_darwin_amd64.tar.gz"
-      sha256 "5d66725c0b66ec2d452b72bcfbb9e231e1c3160e2bce41d6856d7c8173cb9f73"
+      url "https://github.com/alexmt/claude-ls/releases/download/v0.1.1/claude-ls_darwin_amd64.tar.gz"
+      sha256 "a77ca3b34824f97e441eed44d0f6e258b580905ecafb028cb94b7f50d37e6045"
 
       define_method(:install) do
         bin.install "claude-ls"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/alexmt/claude-ls/releases/download/v0.1.0/claude-ls_darwin_arm64.tar.gz"
-      sha256 "48c7a71b8b6b653d5ade4a40015c671757025b6bfb7112a163e7a254b90f3963"
+      url "https://github.com/alexmt/claude-ls/releases/download/v0.1.1/claude-ls_darwin_arm64.tar.gz"
+      sha256 "d8bd071e6f7c01d2b19969a1d39feedafb5819b027a62f6a88c0406de4d82e3a"
 
       define_method(:install) do
         bin.install "claude-ls"
@@ -28,15 +28,15 @@ class ClaudeLs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alexmt/claude-ls/releases/download/v0.1.0/claude-ls_linux_amd64.tar.gz"
-      sha256 "7f2bf8d8dbcfad5f92f8dd3a24d44dc134ae7ddd401bd3dd94adc7ceec2674ec"
+      url "https://github.com/alexmt/claude-ls/releases/download/v0.1.1/claude-ls_linux_amd64.tar.gz"
+      sha256 "12dd8dc96320b384346d0e64fe5875879a3a0bd2d094fd060d66403c7ca2d774"
       define_method(:install) do
         bin.install "claude-ls"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alexmt/claude-ls/releases/download/v0.1.0/claude-ls_linux_arm64.tar.gz"
-      sha256 "85a4c666b3f42b191d6060b0895faefa954691b7134a6cee6ca0c7060e24a591"
+      url "https://github.com/alexmt/claude-ls/releases/download/v0.1.1/claude-ls_linux_arm64.tar.gz"
+      sha256 "9a3d20f8b9fcfd6f9d6836ff008520a2c042aacbcb656a8dd72f4cab0db7cd7a"
       define_method(:install) do
         bin.install "claude-ls"
       end
